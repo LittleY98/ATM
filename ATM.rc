@@ -1,0 +1,382 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\ATM.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\ATM.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ATM_DIALOG DIALOGEX 0, 0, 314, 252
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | DS_CENTER | WS_POPUP | WS_VISIBLE
+EXSTYLE WS_EX_APPWINDOW
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_EDIT_CARDNO,147,64,95,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "卡号 :",IDC_STATIC,117,67,22,8
+    LTEXT           "密码 :",IDC_STATIC,117,88,21,8
+    PUSHBUTTON      "更正",IDC_BTN_MOD,100,174,44,23,BS_MULTILINE
+    DEFPUSHBUTTON   "确认",IDC_BTN_OK,34,174,44,23,BS_MULTILINE
+    EDITTEXT        IDC_EDIT_PWD,146,86,96,12,ES_PASSWORD | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "",IDC_STATIC_TIP,246,64,61,33
+    PUSHBUTTON      "退出",IDC_BTN_EXIT,232,174,44,23,BS_MULTILINE
+    CTEXT           "欢迎您的光临",IDC_STATIC,14,66,83,11
+    LTEXT           "",IDC_STATIC_DATE,20,86,78,29
+    PUSHBUTTON      "注册",IDC_BTN_REGISTER,166,174,44,23,BS_MULTILINE
+END
+
+IDD_DIALOG_GETMONEY DIALOG DISCARDABLE  0, 0, 283, 183
+STYLE DS_MODALFRAME | WS_POPUP
+FONT 12, "System"
+BEGIN
+    CONTROL         208,IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE,7,7,
+                    269,37
+    CTEXT           "请输入金额",IDC_STATIC_INFO,97,52,94,25
+    EDITTEXT        IDC_EDIT_GETMONEY,108,93,73,17,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确认",IDC_BTN_OK,237,107,39,24,BS_MULTILINE
+    PUSHBUTTON      "主菜单",IDC_BTN_BACK,7,145,39,24,BS_MULTILINE
+    LTEXT           "",IDC_STATIC_TIP,95,72,104,54
+    PUSHBUTTON      "打印凭条",IDC_BTN_PRINTINFO,7,107,39,24,BS_MULTILINE
+    PUSHBUTTON      "100",IDC_BTN_100,7,47,27,19
+    PUSHBUTTON      "300",IDC_BTN_300,7,82,27,19
+    PUSHBUTTON      "500",IDC_BTN_500,7,118,27,19
+    PUSHBUTTON      "800",IDC_BTN_800,249,47,27,19
+    PUSHBUTTON      "1000",IDC_BTN_1000,249,82,27,19
+    PUSHBUTTON      "退卡",IDC_BTN_EXIT,237,145,39,24,BS_MULTILINE
+    LTEXT           "注意:   本存取款机支持最小面额为100元,每日最多存取款5000元",
+                    IDC_STATIC_MONEYTIPS,98,136,104,18
+END
+
+IDD_DIALOG_TRANSMONEY DIALOG DISCARDABLE  0, 0, 282, 182
+STYLE DS_MODALFRAME | WS_POPUP
+FONT 10, "System"
+BEGIN
+    CTEXT           "请输入对方账号",IDC_STATIC_TIP,93,51,126,57
+    EDITTEXT        IDC_EDIT_TRANSINFO,110,112,99,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确认",IDC_BTN_OK,234,60,41,22,BS_MULTILINE
+    PUSHBUTTON      "退卡",IDC_BTN_EXIT,233,151,42,22,BS_MULTILINE
+    PUSHBUTTON      "打印凭条",IDC_BTN_PRINTINFO,14,62,42,22,BS_MULTILINE
+    PUSHBUTTON      "主菜单",IDC_BTN_BACK,14,140,44,22,BS_MULTILINE
+    PUSHBUTTON      "重试",IDC_BTN_RETRY,235,120,40,23,BS_MULTILINE
+    PUSHBUTTON      "修改",IDC_BTN_MOD,234,90,41,22,BS_MULTILINE
+END
+
+IDD_DIALOG_QUERY DIALOG DISCARDABLE  0, 0, 262, 174
+STYLE DS_MODALFRAME | WS_POPUP
+FONT 10, "System"
+BEGIN
+    CTEXT           "",IDC_STATIC_TIP,91,52,77,41
+    PUSHBUTTON      "主菜单",IDC_BTN_BACK,7,143,50,23,BS_MULTILINE
+    PUSHBUTTON      "余额 ",IDC_BTN_REMAINMONEY,7,55,53,28,BS_CENTER | 
+                    BS_VCENTER | BS_MULTILINE
+    PUSHBUTTON      "历史记录",IDC_BTN_HISTORY,7,101,53,24,BS_MULTILINE
+    PUSHBUTTON      "退卡",IDC_BTN_EXIT,207,102,48,27,BS_MULTILINE
+END
+
+IDD_DIALOG_MAINMENU DIALOG DISCARDABLE  0, 0, 289, 184
+STYLE DS_MODALFRAME | WS_POPUP
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "查询",IDC_BTN_QUERY,8,95,46,23,BS_MULTILINE
+    PUSHBUTTON      "取款",IDC_BTN_GETMONEY,8,46,46,23,BS_MULTILINE
+    PUSHBUTTON      "改密",IDC_BTN_MODPWD,238,95,44,23,BS_MULTILINE
+    PUSHBUTTON      "转账",IDC_BTN_TRANSMONEY,8,143,47,23,BS_MULTILINE
+    PUSHBUTTON      "退卡",IDC_BTN_EXIT,238,143,44,23,BS_MULTILINE
+    LTEXT           "",IDC_STATIC_TIP,106,77,99,68
+    PUSHBUTTON      "存款",IDC_BTN_DEPOSIT,236,46,46,23,BS_MULTILINE
+END
+
+IDD_DIALOG_Mod DIALOG DISCARDABLE  0, 0, 265, 179
+STYLE DS_MODALFRAME | WS_POPUP
+FONT 10, "System"
+BEGIN
+    CTEXT           "请输入原密码",IDC_STATIC_TIP,79,54,75,22
+    EDITTEXT        IDC_EDIT_PWD,83,84,74,15,ES_PASSWORD | ES_AUTOHSCROLL
+    PUSHBUTTON      "主菜单",IDC_BTN_BACK,7,106,37,24,BS_MULTILINE
+    PUSHBUTTON      "修改",IDC_BTN_MOD,221,75,37,24,BS_MULTILINE
+    DEFPUSHBUTTON   "确认",IDC_BTN_OK,221,105,37,24,BS_MULTILINE
+    PUSHBUTTON      "取消",IDC_BTN_CANCLE,221,45,37,24,BS_MULTILINE
+    PUSHBUTTON      "退卡",IDC_BTN_EXIT,221,135,37,24,BS_MULTILINE
+END
+
+IDD_DIALOG_REGISTER DIALOG DISCARDABLE  0, 0, 272, 182
+STYLE DS_MODALFRAME | WS_POPUP
+FONT 10, "System"
+BEGIN
+    LTEXT           "卡号：",IDC_STATIC,70,27,25,8
+    EDITTEXT        IDC_EDIT_CARDNO,99,25,66,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "检测卡号",IDC_BTN_CHECK,170,24,50,14
+    LTEXT           "密码：",IDC_STATIC,70,45,25,8
+    EDITTEXT        IDC_EDIT_PWD,99,43,66,14,ES_AUTOHSCROLL
+    LTEXT           "姓名：",IDC_STATIC,70,63,25,8
+    EDITTEXT        IDC_EDIT_NAME,99,61,66,14,ES_AUTOHSCROLL
+    LTEXT           "性别：",IDC_STATIC,70,81,25,8
+    LTEXT           "地址：",IDC_STATIC,70,99,25,8
+    EDITTEXT        IDC_EDIT_ADDR,99,96,66,14,ES_AUTOHSCROLL
+    LTEXT           "电话：",IDC_STATIC,70,117,25,8
+    EDITTEXT        IDC_EDIT_PHONE,99,115,66,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBOX_SEX,99,80,48,30,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "确认",IDC_BTN_OK,46,140,52,24
+    PUSHBUTTON      "取消",IDC_BTN_CANCEL,156,140,52,24
+END
+
+IDD_DIALOG_DEPOSIT DIALOG DISCARDABLE  0, 0, 271, 182
+STYLE DS_MODALFRAME | WS_POPUP
+FONT 10, "System"
+BEGIN
+    CTEXT           "请输入金额",IDC_STATIC_INFO,82,21,94,25
+    EDITTEXT        IDC_EDIT_DEPOSIT,93,62,73,17,ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC_TIP,80,41,104,54
+    LTEXT           "注意:   本存取款机支持最小面额为100元,每日最多存取款5000元",
+                    IDC_STATIC_MONEYTIPS,83,105,104,18
+    PUSHBUTTON      "确认",IDC_BTN_OK,226,109,38,21
+    PUSHBUTTON      "退卡",IDC_BTN_EXIT,226,138,38,21
+    PUSHBUTTON      "主菜单",IDC_BTN_MAINMENU,7,135,38,21
+END
+
+IDD_DIALOG_RECORD DIALOG DISCARDABLE  0, 0, 280, 196
+STYLE DS_MODALFRAME | WS_POPUP
+FONT 10, "System"
+BEGIN
+    CONTROL         "List5",IDC_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | WS_BORDER | WS_TABSTOP,14,20,237,118
+    PUSHBUTTON      "主菜单",IDC_BTN_MAINMENU,8,163,44,26
+    PUSHBUTTON      "导出数据",IDC_BTN_WRITE,115,163,44,26
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "ATM Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "ATM\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2018\n\031\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "ATM.EXE\0"
+            VALUE "ProductName", "ATM 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ATM_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 307
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 245
+    END
+
+    IDD_DIALOG_GETMONEY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 276
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+
+    IDD_DIALOG_TRANSMONEY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 275
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 175
+    END
+
+    IDD_DIALOG_QUERY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 255
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 167
+    END
+
+    IDD_DIALOG_MAINMENU, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 282
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 177
+    END
+
+    IDD_DIALOG_Mod, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 258
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 172
+    END
+
+    IDD_DIALOG_REGISTER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 265
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 175
+    END
+
+    IDD_DIALOG_DEPOSIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 264
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 175
+    END
+
+    IDD_DIALOG_RECORD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 273
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 189
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DIALOG_REGISTER DLGINIT
+BEGIN
+    IDC_COMBOX_SEX, 0x403, 3, 0
+0xd0c4, "\000" 
+    IDC_COMBOX_SEX, 0x403, 3, 0
+0xaec5, "\000" 
+    0
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\ATM.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
